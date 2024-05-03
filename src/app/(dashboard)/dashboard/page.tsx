@@ -1,7 +1,7 @@
 'use client';
 
 import { Card } from '@/components/ui/card';
-import { TOOLS } from '@/constants';
+import { TOOLS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -30,9 +30,7 @@ const DashboardPage = () => {
           >
             <div className="flex items-center gap-x-4">
               <div className={cn('p-2 w-fit rounded-md', tool.bgColor)}>
-                <tool.icon
-                  className={cn('w-8 h-8', tool.color)}
-                />
+                <tool.icon className={cn('w-8 h-8', tool.color)} />
               </div>
               <div className="font-semibold">{tool.label}</div>
             </div>

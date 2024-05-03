@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
-import { ROUTES } from '@/constants';
+import { ROUTES } from '@/lib/constants';
 import { usePathname } from 'next/navigation';
 
 const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
