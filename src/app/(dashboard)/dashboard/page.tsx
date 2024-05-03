@@ -1,9 +1,7 @@
-import { UserButton } from '@clerk/nextjs';
-
 const DashboardPage = () => {
   return (
     <div>
-      <p>Dashboard route(protected)</p>
+      Dashboard route(protected)
     </div>
   );
 };
