@@ -59,6 +59,7 @@ export const TOOLS = [
     icon: MessageSquare,
     color: 'text-violet-500',
     bgColor: 'bg-violet-500/10',
+    hoverBgColor: 'hover:bg-violet-500/5',
     href: '/conversation',
   },
   {
@@ -66,6 +67,7 @@ export const TOOLS = [
     icon: MusicIcon,
     color: 'text-emerald-500',
     bgColor: 'bg-emerald-500/10',
+    hoverBgColor: 'hover:bg-emerald-500/5',
     href: '/music',
   },
   {
@@ -73,6 +75,7 @@ export const TOOLS = [
     icon: ImageIcon,
     color: 'text-pink-500',
     bgColor: 'bg-pink-500/10',
+    hoverBgColor: 'hover:bg-pink-500/5',
     href: '/image',
   },
   {
@@ -80,6 +83,7 @@ export const TOOLS = [
     icon: VideoIcon,
     color: 'text-orange-500',
     bgColor: 'bg-orange-500/10',
+    hoverBgColor: 'hover:bg-orange-500/5',
     href: '/video',
   },
   {
@@ -87,6 +91,7 @@ export const TOOLS = [
     icon: Code,
     color: 'text-red-500',
     bgColor: 'bg-red-500/10',
+    hoverBgColor: 'hover:bg-red-500/5',
     href: '/code',
   },
 ];
