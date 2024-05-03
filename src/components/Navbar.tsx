@@ -1,9 +1,5 @@
+import MobileSidebar from '@/components/MobileSidebar';
 import { UserButton } from '@clerk/nextjs';
-import dynamic from 'next/dynamic';
-
-const MobileSidebar = dynamic(() => import('@/components/MobileSidebar'), {
-  ssr: false,
-});
 
 const Navbar = () => {
   return (
