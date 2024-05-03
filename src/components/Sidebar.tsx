@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
-import { routes } from '@/constants';
+import { ROUTES } from '@/constants';
 import { usePathname } from 'next/navigation';
 
 const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
@@ -24,7 +24,7 @@ const Sidebar = () => {
           </h1>
         </Link>
         <div className="space-y-1">
-          {routes.map((route) => (
+          {ROUTES.map((route) => (
             <Link
               href={route.href}
               key={route.href}
