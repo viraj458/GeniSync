@@ -29,7 +29,7 @@ const LandingHero = () => {
         Create content 10X faster
       </div>
       <div className="">
-        <Link href={isSignedIn ? '/dashboard' : '/sign-up'}>
+        <Link href={isSignedIn ? '/dashboard' : '/sign-in'}>
           <Button
             className="md:text-lg p-4 md:p-6 rounded-full font-semibold bg-gradient-to-l from-blue-500 to-pink-500 hover:bg-gradient-to-l hover:from-blue-700 hover:to-pink-700"
           >
