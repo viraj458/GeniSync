@@ -75,3 +75,30 @@ export const TOOLS = [
     href: '/music',
   },
 ];
+
+export const TESTAMONIALS = [
+  {
+    name: 'David Ryan',
+    avatar: 'DR',
+    title: 'Web Developer',
+    description: 'Amazing Application!!',
+  },
+  {
+    name: 'Sarah Johnson',
+    avatar: 'SJ',
+    title: 'UX Designer',
+    description: 'Creating delightful user experiences!',
+  },
+  {
+    name: 'Michael Chen',
+    avatar: 'MC',
+    title: 'Software Engineer',
+    description: 'Crafting code that makes a difference.',
+  },
+  {
+    name: 'Emily Rodriguez',
+    avatar: 'ER',
+    title: 'Frontend Developer',
+    description: 'Building interfaces with passion and precision.',
+  },
+];
