@@ -39,18 +39,7 @@ export const ROUTES = [
     href: '/music',
     color: 'text-emerald-500',
   },
-  {
-    label: 'Code Generation',
-    icon: Code,
-    href: '/code',
-    color: 'text-red-500',
-  },
-  {
-    label: 'Settings',
-    icon: Settings,
-    href: '/settings',
-    color: 'text-yellow-700',
-  },
+
 ];
 
 export const TOOLS = [
@@ -85,13 +74,5 @@ export const TOOLS = [
     bgColor: 'bg-orange-500/10',
     hoverBgColor: 'hover:bg-orange-500/5',
     href: '/video',
-  },
-  {
-    label: 'Code Generation',
-    icon: Code,
-    color: 'text-red-500',
-    bgColor: 'bg-red-500/10',
-    hoverBgColor: 'hover:bg-red-500/5',
-    href: '/code',
   },
 ];
