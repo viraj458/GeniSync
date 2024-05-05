@@ -39,7 +39,6 @@ export const ROUTES = [
     href: '/music',
     color: 'text-emerald-500',
   },
-
 ];
 
 export const TOOLS = [
@@ -50,14 +49,6 @@ export const TOOLS = [
     bgColor: 'bg-violet-500/10',
     hoverBgColor: 'hover:bg-violet-500/5',
     href: '/conversation',
-  },
-  {
-    label: 'Music Generation',
-    icon: MusicIcon,
-    color: 'text-emerald-500',
-    bgColor: 'bg-emerald-500/10',
-    hoverBgColor: 'hover:bg-emerald-500/5',
-    href: '/music',
   },
   {
     label: 'Image Generation',
@@ -74,5 +65,13 @@ export const TOOLS = [
     bgColor: 'bg-orange-500/10',
     hoverBgColor: 'hover:bg-orange-500/5',
     href: '/video',
+  },
+  {
+    label: 'Music Generation',
+    icon: MusicIcon,
+    color: 'text-emerald-500',
+    bgColor: 'bg-emerald-500/10',
+    hoverBgColor: 'hover:bg-emerald-500/5',
+    href: '/music',
   },
 ];
