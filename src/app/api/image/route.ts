@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     }
 
     if (!replicate.auth) {
-      return new NextResponse('Gemini API Key not configured', { status: 500 });
+      return new NextResponse('Replicate Key not configured', { status: 500 });
     }
 
     if (!prompt) {
