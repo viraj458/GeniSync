@@ -6,10 +6,9 @@ import { z } from 'zod';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import Image from 'next/image';
 
-import { MessageSquare, UserIcon } from 'lucide-react';
-import { formSchema } from '@/validation/formSchema';
+import { MessageSquare } from 'lucide-react';
+import { formSchema } from '@/validation/conversationSchema';
 import { Form, FormControl, FormField, FormItem } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -58,7 +57,7 @@ const ConversationPage = () => {
         description="Our most advanced conversation modal"
         icon={MessageSquare}
         iconColor="text-violet-500"
-        bgColor="bf-violet-500/10"
+        bgColor="bg-violet-500/10"
       />
       <div className="px-4 lg:px-8">
         <div>
