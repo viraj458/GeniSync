@@ -7,15 +7,14 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ROUTES } from '@/lib/constants';
 import { usePathname } from 'next/navigation';
-import { FC } from 'react';
 
 const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
 
 type SidebarProps = {
-  onClose: () => void;
+  onClose?: () => void;
 };
 
-const Sidebar: FC<SidebarProps> = ({ onClose }) => {
+const Sidebar = ({ onClose }: SidebarProps) => {
   const pathname = usePathname();
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white md:fixed md:w-72">
