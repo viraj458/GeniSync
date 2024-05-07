@@ -1,12 +1,18 @@
 'use client';
 
-import Sidebar from '@/components/Sidebar';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
-import { useEffect, useState } from 'react';
-
+import {
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+} from '@chakra-ui/react';
+import React, { useEffect, useState } from 'react';
+import Sidebar from '@/components/Sidebar';
 const MobileSidebar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
@@ -17,16 +23,27 @@ const MobileSidebar = () => {
   }
 
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu />
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left" className="p-0">
-        <Sidebar />
-      </SheetContent>
-    </Sheet>
+    <>
+      <Button
+        variant="ghost"
+        size="icon"
+        className="md:hidden"
+        onClick={onOpen}
+      >
+        <Menu />
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement="left"
+        onClose={onClose}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton className='text-white' />
+            <Sidebar onClose={onClose} />
+        </DrawerContent>
+      </Drawer>
+    </>
   );
 };
 export default MobileSidebar;

@@ -7,15 +7,24 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ROUTES } from '@/lib/constants';
 import { usePathname } from 'next/navigation';
+import { FC } from 'react';
 
 const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
 
-const Sidebar = () => {
+type SidebarProps = {
+  onClose: () => void;
+};
+
+const Sidebar: FC<SidebarProps> = ({ onClose }) => {
   const pathname = usePathname();
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white md:fixed md:w-72">
       <div className="px-3 py-2 flex-1">
-        <Link href="/dashboard" className="flex items-center pl-2 mb-14">
+        <Link
+          href="/dashboard"
+          className="flex items-center pl-2 mb-14"
+          onClick={onClose}
+        >
           <div className="relative w-12 h-12">
             <Image fill src="/logo-static.svg" alt="logo" />
           </div>
@@ -26,6 +35,7 @@ const Sidebar = () => {
         <div className="space-y-1">
           {ROUTES.map((route) => (
             <Link
+              onClick={onClose}
               href={route.href}
               key={route.href}
               className={cn(
