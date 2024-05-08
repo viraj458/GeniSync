@@ -17,7 +17,7 @@ const LandingNavBar = () => {
     <nav className="p-4 bg-transparent flex items-center justify-between">
       <Link href="/" className="flex items-center">
         <div className="relative w-12 h-12">
-          <Image src="/logo-static.svg" alt="logo" fill />
+          <Image src="/logo-static.png" alt="logo" fill />
         </div>
         <h1 className={cn('text-lg font-bold text-white', font.className)}>
           GeniSync

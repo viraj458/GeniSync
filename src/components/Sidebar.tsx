@@ -25,7 +25,7 @@ const Sidebar = ({ onClose }: SidebarProps) => {
           onClick={onClose}
         >
           <div className="relative w-12 h-12">
-            <Image fill src="/logo-static.svg" alt="logo" />
+            <Image fill src="/logo-static.png" alt="logo" />
           </div>
           <h1 className={cn('text-lg font-bold', montserrat.className)}>
             GeniSync
