@@ -87,18 +87,18 @@ export const TESTAMONIALS = [
     name: 'Sarah Johnson',
     avatar: 'SJ',
     title: 'UX Designer',
-    description: 'Creating delightful user experiences!',
+    description: 'Creating delightful experiences!',
   },
   {
     name: 'Michael Chen',
     avatar: 'MC',
     title: 'Software Engineer',
-    description: 'Crafting code that makes a difference.',
+    description: 'Fun and usefull application.',
   },
   {
     name: 'Emily Rodriguez',
     avatar: 'ER',
     title: 'Frontend Developer',
-    description: 'Building interfaces with passion and precision.',
+    description: 'Great application',
   },
 ];
